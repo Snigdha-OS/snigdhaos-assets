@@ -5,7 +5,7 @@ REPO_URL="https://github.com/Snigdha-OS/snigdhaos-assets.git"
 BRANCH="master"  # or "master" depending on your repository's default branch
 
 # Commit message
-MESSAGE="@eshanized: push via script"
+MESSAGE="⏳ @eshanized continuously updating the repository!"
 
 # Add all files, commit, and push changes
 git add .
