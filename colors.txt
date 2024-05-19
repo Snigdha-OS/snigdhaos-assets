@@ -1,0 +1,24 @@
+Name: Coral
+Hex: #FF7F53
+RGB: (255, 127, 83)
+CMYK: 0, 0.501, 0.674, 0
+
+Name: Mandarin
+Hex: #F3764F
+RGB: (243, 118, 79)
+CMYK: 0, 0.514, 0.674, 0.047
+
+Name: Burnt Sienna
+Hex: #E66D4C
+RGB: (230, 109, 76)
+CMYK: 0, 0.526, 0.669, 0.098
+
+Name: Jelly Bean
+Hex: #DA6448
+RGB: (218, 100, 72)
+CMYK: 0, 0.541, 0.669, 0.145
+
+Name: Dark Coral
+Hex: #CD5B44
+RGB: (205, 91, 68)
+CMYK: 0, 0.556, 0.668, 0.196
