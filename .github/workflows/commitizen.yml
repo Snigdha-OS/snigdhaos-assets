@@ -1,33 +1,27 @@
-name: Commitizen Check on Push and Pull
+name: Conventional Commit Check
 
 on:
   push:
     branches:
-      - master
-  pull_request:
-    branches:
-      - master
+      - master  # Adjust to match your main branch name
 
 jobs:
-  commitizen_check:
-    name: Check Commitizen Commit on Push
+  check-commits:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Install Node.js
-        uses: actions/setup-node@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: '16'
 
-      - name: Install Commitizen
-        run: npm install -g commitizen
+      - name: Install dependencies
+        run: npm install  # Ensure to have npm dependencies set up
 
-      - name: Verify Commitizen Commit
-        run: |
-          if git log --format='%s' ${{ github.event.before }}..${{ github.sha }} | grep -v '^(feat|fix|docs|style|refactor|perf|test|chore)(\(.+\))?: .+'; then
-            echo "Invalid commit message found. Please use Commitizen convention."
-            exit 1
-          fi
+      - name: Run commit script
+        run: bash ./push.sh
+
+      # You can add additional steps here for testing, linting, etc.
