@@ -3,7 +3,7 @@ name: Check Conventional Commit
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   check-commit-message:
