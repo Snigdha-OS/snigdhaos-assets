@@ -24,6 +24,7 @@ RGB: (205, 91, 68)
 CMYK: 0, 0.556, 0.668, 0.196
 
 ##### Add codes #####
+Source: https://davidpiesse.github.io/tailwind-md-colours/
 
 cyan                    #00bcd4
 cyan-50                 #e0f7fa
